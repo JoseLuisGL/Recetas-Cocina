@@ -2,6 +2,7 @@ import './App.css';
 import { Button, Form, FormControl, FormGroup, FormText, Card, Col, Row, Image, Container} from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
 import ButtonReact from './ButtonReact';
+import ImageReact from './ImageReact';
 
 function App() {
   const titulos = ["Beef Stroganoff",
@@ -51,7 +52,7 @@ function App() {
         {titulos.map((titulo, idx) => (
           <Col key={idx}>
             <Card>
-              <Card.Img variant="top" src="https://media.wiggot.mx/ioPBXKl-l.jpg" className="w-50"/>
+            <ImageReact url={"https://media.wiggot.mx/ioPBXKl-l.jpg"} rounded ={"rounded "} className={"w-50"}/>
               <Card.Body>
                 <Card.Title>{titulo}</Card.Title>
                 <Card.Text>
